@@ -4,12 +4,12 @@ import Cocoa
 // 데이터를 묶는 방식이 크게 2가지 class, struct
 
 // struct
-struct YoutubeStruct {
+struct JunKyuStruct {
     var name: String
-    var sunscribersCount: Int
+    var age: Int
 }
 
-var jun = YoutubeStruct(name: "이준규", sunscribersCount: 9999)
+var jun = JunKyuStruct(name: "이준규", age: 26)
 
 var junClone = jun
 print("값 넣기 전 junClone.name: \(junClone.name)")
@@ -29,18 +29,18 @@ print("###################################################################")
 
 
 // class
-class YoutubeClass {
+class JunKyuClass {
     var name: String
-    var sunscribersCount: Int
+    var age: Int
     // init은 생성자 - 즉 메모리에 올린다. class 타입에는 필요.
     // init으로 매개변수를 가진 생성자 메소드를 만들어야 매개변수를 넣어서 그 값을 가진 객체(object)를 만들 수 있음.
-    init(name: String, subscribersCount: Int) {
+    init(name: String, age: Int) {
         self.name = name
-        self.sunscribersCount = subscribersCount
+        self.age = age
     }
 }
 
-var junkyu = YoutubeClass(name: "이준규", subscribersCount: 9999)
+var junkyu = JunKyuClass(name: "이준규", age: 26)
 
 var junkyuClone = junkyu
 
