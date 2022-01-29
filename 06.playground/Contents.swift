@@ -13,12 +13,12 @@ var jun = JunKyuStruct(name: "이준규", age: 26)
 
 var junClone = jun
 print("값 넣기 전 junClone.name: \(junClone.name)")
-// 값 넣은 후 jun.name: 이준규
+// 값 넣은 후 junClone.name: 이준규
 
 
 junClone.name = "수원삼성"
 print("값 넣은 후 junClone.name: \(junClone.name)")
-// 값 넣은 후 jun.name: 수원삼성
+// 값 넣은 후 junClone.name: 수원삼성
 
 print("값 넣은 후 jun.name: \(jun.name)")
 // 값 넣은 후 jun.name: 이준규
